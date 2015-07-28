@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wswenyue.parkinglot" >
+    //网络接入权限
+    <uses-permission android:name="ANDROID.PERMISSION.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.write_external_storage" />
+
+    <!--
+     To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" /> <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/parking_lot"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        //欢迎界面
+        <activity
+            android:name=".Activity.Appstart"
+            android:label="@string/title_activity_appstart" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        //操作界面
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        //登陆界面
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        //注册界面
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        //找回密码
+        <activity
+            android:name=".Activity.ResetPasswdActivity"
+            android:label="@string/title_activity_reset_passwd" >
+        </activity>
+
+        <service
+            android:name=".service.MyService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name=".Activity.BasicActivity"
+            android:label="@string/title_activity_basic" >
+        </activity>
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name=".Activity.PayZFBActivity"
+            android:label="@string/title_activity_pay_zfb" >
+        </activity>
+        <activity
+            android:name=".Activity.PayCZKActivity"
+            android:label="@string/title_activity_pay_czk" >
+        </activity>
+    </application>
+
+</manifest>

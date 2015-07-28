@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/login_bg"
+    tools:context="com.wswenyue.parkinglot.Activity.PayCZKActivity">
+
+    <!--顶部logo图标的显示  -->
+    <TextView
+        android:id="@+id/lableView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/logo" />
+
+    <!--定义输入充值卡卡号的文本编辑框  -->
+    <EditText
+        android:id="@+id/cardNumberView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/lableView"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/common_text"
+        android:hint="请输入充值卡号"
+        android:paddingLeft="10dp" />
+
+    <!--定义输入密码的文本编辑框  -->
+    <EditText
+        android:id="@+id/passwordView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/cardNumberView"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/common_text"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:id="@+id/bt_ok"
+        android:background="@drawable/bt_ok"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="36dp"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:id="@+id/bt_cancel"
+        android:background="@drawable/bt_cancel"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="36dp"
+        android:layout_alignRight="@+id/passwordView"
+        android:layout_alignEnd="@+id/passwordView" />
+
+</RelativeLayout>

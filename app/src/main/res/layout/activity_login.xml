@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:padding="20dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.wswenyue.parkinglot.Activity.LoginActivity">
+
+    <!--顶部logo图标的显示  -->
+    <TextView
+        android:id="@+id/lableView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/logo" />
+
+    <!--定义输入用户名的文本编辑框  -->
+    <EditText
+        android:id="@+id/usernameView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/lableView"
+        android:background="@drawable/login_user"
+        android:hint="UserName"
+        android:paddingLeft="70dp" />
+
+    <!--定义输入密码的文本编辑框  -->
+    <EditText
+        android:id="@+id/passwordView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/usernameView"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/login_passwd"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="70dp" />
+
+    <!--Logo in按钮  -->
+    <Button
+        android:id="@+id/login_bt"
+        android:onClick="login"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/passwordView"
+        android:background="@drawable/login_bt" />
+
+    <!--ForgetPassword按钮  -->
+    <Button
+        android:id="@+id/bt_forgetPassword"
+        style="?android:attr/buttonStyleSmall"
+        android:onClick="forgetPassword"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/login_bt_forget_password" />
+
+    <!--Register按钮  -->
+    <Button
+        android:id="@+id/bt_register"
+        style="?android:attr/buttonStyleSmall"
+        android:onClick="register"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="36dp"
+        android:layout_alignRight="@id/passwordView"
+        android:background="@drawable/login_bt_register" />
+
+</RelativeLayout>

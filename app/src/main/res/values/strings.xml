@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ParkingLot</string>
+    <string name="title_activity_appstart">ParkingLot</string>
+    <string name="title_activity_main">ParkingLot</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_reset_passwd">ResetPasswdActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_basic">BasicActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_pay_zfb">PayZFBActivity</string>
+    <string name="title_activity_pay_czk">PayCZKActivity</string>
+
+
+</resources>

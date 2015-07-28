@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/login_bg"
+    tools:context="com.wswenyue.parkinglot.Activity.ResetPasswdActivity">
+
+    <!--顶部logo图标的显示  -->
+    <TextView
+        android:id="@+id/lableView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/logo" />
+
+
+    <!--定义输入密码的文本编辑框  -->
+    <EditText
+        android:id="@+id/passwordView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/lableView"
+        android:background="@drawable/login_passwd"
+        android:hint="new Passward"
+        android:inputType="textPassword"
+        android:paddingLeft="70dp" />
+
+    <!--定义输入确认密码的文本编辑框  -->
+    <EditText
+        android:id="@+id/confirmPasswdView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/passwordView"
+        android:background="@drawable/login_passwd"
+        android:hint="Confirm Your Passward"
+        android:inputType="textPassword"
+        android:paddingLeft="70dp" />
+
+    <!--定义输入电话文本编辑框  -->
+    <EditText
+        android:id="@+id/phoneView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/confirmPasswdView"
+        android:background="@drawable/phone"
+        android:hint="Your Registered PhoneNumber"
+        android:inputType="text|phone"
+        android:paddingLeft="70dp" />
+    <!--定义输入Email文本编辑框  -->
+    <EditText
+        android:id="@+id/emailView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/phoneView"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/email"
+        android:hint="Your Registered Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="70dp" />
+
+    <!--ResetPasswd按钮  -->
+    <Button
+        android:id="@+id/resetPasswd_bt"
+        android:onClick="resetPasswd"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/emailView"
+        android:background="@drawable/bt_reset_passwd" />
+
+</RelativeLayout>
